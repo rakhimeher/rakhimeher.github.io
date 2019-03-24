@@ -3,11 +3,9 @@ var myImage = document.querySelector('img');
 myImage.onclick = function() {
     var mySrc = myImage.getAttribute('src');
     if(mySrc === 'images/pic1.jpg') 
+      myImage.setAttribute ('src','images/pic2.jpg');
+     else if (mySrc === 'images/pic2.jpg')
       myImage.setAttribute ('src','images/pic3.jpg');
-     else if (mySrc === 'images/pic3.jpg')
-      myImage.setAttribute ('src','images/pic11.jpg');
-      else if (mySrc === 'images/pic11.jpg')
-      myImage.setAttribute ('src','images/pic14.jpg');
     else  
     myImage.setAttribute ('src','images/pic1.jpg');
   }
